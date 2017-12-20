@@ -1,0 +1,29 @@
+{
+  "name": "xively_client",
+  "version": "1.0.0",
+  "description": "Xively client to allow you to connect, subscribe and publish messages through MQTT to your xively devices",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kamacho68/xively_client.git"
+  },
+  "keywords": [
+    "Xively",
+    "client",
+    "MQTT",
+    "publich",
+    "subscribe"
+  ],
+  "author": "Kamel Aouidef",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kamacho68/xively_client/issues"
+  },
+  "homepage": "https://github.com/Kamacho68/xively_client#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
+}
