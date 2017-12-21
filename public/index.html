@@ -16,7 +16,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                 <h3>LMI - Xively MQTT Client</h3>
               </div>
-              <div class="modal-body">
+              <div id="modal-body" class="modal-body">
                 <div class="well">
                   <ul class="nav nav-tabs">
                     <li class="active"><a href="#clientConnection" data-toggle="tab">Client Connection</a></li>
@@ -203,10 +203,7 @@
 			                        <div class="controls">
 			    						<button type="button" id="publishMessage" name="publishMessage" class="btn btn-info" disabled>Post New Message</button>
 			                        </div>
-			                    </div>
-               					<hr>
-               					
-
+			                    </div>	
                           	</fieldset>
                     	</form>
                     </div>
@@ -216,7 +213,7 @@
               
               <fieldset>
 				<!-- MQTT trace log -->
-				<div class="control-group">
+				<div class="control-group mqtt-trace-log">
 					<!-- Message log-->
 					<label class="control-label" for="mqttLog">Message log</label>
 					<div class="controls">

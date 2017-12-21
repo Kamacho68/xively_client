@@ -1,4 +1,7 @@
 $(document).ready(function() {
+	
+	var model_body_height = 1.485*$(window).height();
+	$('.modal-body').css('max-height', model_body_height);
     
 	/* START OF TAB-PANE */
     var navListItems = $('ul.setup-panel li a'),
@@ -81,6 +84,10 @@ $(document).ready(function() {
     });
     
     $('#ownDeviceDetails').hide();
+    
+    $('#username').keyup(function() {
+    	$('#subscribeOwnDeviceId').val($(this).val());
+    });
 
     $( "#selectOwn" ).change(function() {
     	
@@ -88,7 +95,7 @@ $(document).ready(function() {
     		$('#ownDeviceDetails').hide();
     	} else {
     		$( "#subscribeOwnForm input[type='text']" ).prop('required', true);
-    		$( "#subscribeOwnDeviceId" ).val($( "#username" ).val());
+    		//$( "#subscribeOwnDeviceId" ).val($( "#username" ).val());
     		$('#ownDeviceDetails').show();
     	}
     });

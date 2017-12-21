@@ -1,3 +1,9 @@
-.modal-body {
+/* .modal-body {
 	max-height: 990px!important;
+} */
+body {
+	background-color: #ff4833;
+}
+.modal-header h3, .mqtt-trace-log .control-label {
+	color: #fff;
 }
